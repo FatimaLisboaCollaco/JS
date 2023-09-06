@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body{
+            background-color: darkslategray;
+            color: aliceblue;
+            font-family: cursive;
+            text-align: center;
+        }
+        h1{ font-size: 60px;}
+        section{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 250px;
+            height: 50px;
+            background-color: aliceblue;
+            color: darkslategray;
+            border-radius: 10px;
+           
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Escolha uma opção</strong></h1>
+    <button onclick="adicao()">Adição</button>
+    <button onclick="subtracao()">Subtração</button>
+    <button onclick="divisao()">Divisão</button>
+    <button onclick="multiplicacao()">Multiplicação</button>
+    <section id="resultado">
+        <p>O resultado irá aparecer aqui.</p>
+    </section>
+    <script>
+        function adicao(){
+            let n1 = Number(window.prompt('Informe o primeiro valor:'))
+            let n2 = Number(window.prompt('Infome o segundo valor:'))
+            let n3=n1+n2
+            let res =window.document.getElementById
+            ('resultado')
+        res.innerHTML=`<p> A soma entre ${n1} e ${n2} é <strong>${n3}</strong>.`
+        }
+
+
+    </script>
+</body>
+</html>
